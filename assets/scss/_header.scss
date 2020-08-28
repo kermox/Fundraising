@@ -1,0 +1,69 @@
+.header {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../assets/img/header-background.jpg");
+  background-size: cover;
+  background-position: top 45% center;
+  background-repeat: no-repeat;
+
+  .overlay {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(38, 60, 103, 0.34);
+    width: 100%;
+    height: 80vh;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+
+    h1 {
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 42px;
+      color: #FFFFFF;
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 26px;
+      color: #FFFFFF;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    .link {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration-line: underline;
+      color: #FFFFFF;
+      &:hover {
+        color: darken(#FFFFFF, 10);
+        transition: color 0.1s ease;
+      }
+
+    }
+
+    .btn {
+      background: #1CB867;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+
+      color: #FFFFFF;
+
+      &:hover {
+        background-color: darken(#1CB867, 20);
+        transition: background-color 0.3s ease;
+      }
+    }
+  }
+}

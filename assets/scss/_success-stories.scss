@@ -1,0 +1,77 @@
+.success-stories {
+  background: #FBF8F6;
+.container {
+  
+}
+  h5 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #0E6B3B;
+  }
+
+  .carousel {
+    .carousel-item {
+      .left {
+
+      }
+
+      .right {
+        h3 {
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 33px;
+
+          color: #000000;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 19px;
+
+          color: #555555;
+        }
+
+        a {
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 19px;
+
+          color: #0E6B3B;
+
+        }
+      }
+    }
+  }
+
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -60px;
+
+  }
+
+  .carousel-control-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -60px;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: -30px;
+
+    li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #0E6B3B;
+    }
+
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+  }
+
+}

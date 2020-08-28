@@ -1,0 +1,27 @@
+.footer {
+  height: 72px;
+  background: #1CB867;
+
+  .copyright {
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #FFFFFF;
+
+    }
+  }
+
+  .social-links {
+    a {
+      :first-child{
+        border-radius: 6px;
+        &:hover {
+          background-color: darken($secondary-color, 20);
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}

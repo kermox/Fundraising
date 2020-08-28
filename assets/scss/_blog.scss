@@ -1,0 +1,43 @@
+.blog {
+  background-color: #FBF8F6;
+
+  h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #0E6B3B;
+  }
+
+  a {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #0D6135;
+
+  }
+
+  .left {
+    width: 75%;
+  }
+
+  .right {
+    .date {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+
+      color: #0E6B3B;
+    }
+
+    .content {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: #000000;
+    }
+  }
+}

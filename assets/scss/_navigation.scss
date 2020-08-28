@@ -1,0 +1,171 @@
+.navigation {
+  position: relative;
+  z-index: 1000;
+
+  .navbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+
+    .navbar-brand {
+      font-size: 28px;
+      line-height: 42px;
+      color: #FFFFFF;
+    }
+
+    .navbar-nav {
+      &:first-child {
+        @include media-breakpoint-down(md) {
+          height: 30vh;
+        }
+
+        .nav-item {
+          &.dropdown {
+            .dropdown-menu {
+              display: block;
+              visibility: hidden;
+              opacity: 0;
+              transform: translateY(20px);
+              transition: .5s ease all;
+              background-color: transparent;
+              border: none;
+              min-width: 3rem;
+
+              &.show {
+                display: block;
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0px);
+                transition: .5s ease all;
+              }
+            }
+
+            .dropdown-item {
+              height: 100%;
+              width: 100%;
+              color: white;
+              font-size: 16px;
+              background-color: rgba(255, 255, 255, 0.35);
+              transition: background-color 0.3s ease;
+
+              &:hover {
+                background-color: #1CB867;
+                transition: background-color 0.3s ease;
+              }
+            }
+          }
+
+          & .divider {
+            height: 35px;
+            width: 1px;
+            background-color: rgba(255, 255, 255, 0.35);
+          }
+
+          .nav-link {
+            color: white;
+            font-size: 16px;
+            line-height: 19px;
+            transition: color 0.1s ease-in;
+
+            &:hover{
+              color: $secondary-color;
+              transition: color 0.1s ease-in;
+            }
+
+            &.dropdown-toggle {
+              &:hover {
+                color: white;
+              }
+            }
+
+            &.nav-button {
+              border: 1px solid white;
+              border-radius: 10px;
+              height: inherit;
+              transition: all 0.3s ease;
+              @include media-breakpoint-down(md) {
+                border: 1px solid #1CB867;
+              }
+
+              &:hover {
+                background-color: #1CB867;
+                border-color: #1CB867;
+                transition: all 0.3s ease;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-toggler {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+
+    outline: none;
+    transition: all 0.3s;
+    @include media-breakpoint-up(lg) {
+      display: none !important;
+    }
+
+    &-element {
+      width: 30px;
+      height: 0;
+      border: 1px solid #FFFFFF;
+      background-color: #FFFFFF;
+      transition: all 0.3s;
+      position: absolute;
+
+      &:nth-child(1) {
+        position: relative;
+        top: -5px;
+      }
+
+      &:nth-child(2) {
+        position: relative;
+        top: 0;
+
+      }
+
+      &:nth-child(3) {
+        position: relative;
+        top: 5px;
+      }
+    }
+
+    &[aria-expanded='true'] {
+
+      background: white;
+      transition: all 0.3s;
+
+      :nth-of-type(1) {
+        transform: rotate(45deg);
+        transition: all 0.3s;
+        top: 2px;
+        background-color: #1CB867;
+        border: 1px solid #1CB867;
+      }
+
+      :nth-of-type(2) {
+        opacity: 0;
+        transition: all 0.3s;
+        background-color: #1CB867;
+        border: 1px solid #1CB867;
+      }
+
+      :nth-of-type(3) {
+        transform: rotate(135deg);
+        transition: all 0.3s;
+        top: -2px;
+        background-color: #1CB867;
+        border: 1px solid #1CB867;
+      }
+    }
+  }
+}
