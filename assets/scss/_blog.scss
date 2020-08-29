@@ -10,12 +10,28 @@
     color: #0E6B3B;
   }
 
-  a {
+  .see-all {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-
+    text-decoration: none;
     color: #0D6135;
+    transition: color 0.3s;
+
+    .svg-path {
+      transition: fill 0.3s;
+    }
+
+
+    &:hover {
+      color: #1CB867;
+      transition: color 0.3s;
+
+      .svg-path {
+        fill: #1CB867;
+        transition: fill 0.3s;
+      }
+    }
 
   }
 
@@ -36,8 +52,15 @@
       font-weight: bold;
       font-size: 14px;
       line-height: 16px;
-
+      text-decoration: none;
+      text-align: left;
       color: #000000;
+      transition: color 0.1s;
+
+      &:hover {
+        color: #454343;
+        transition: color 0.1s;
+      }
     }
   }
 }

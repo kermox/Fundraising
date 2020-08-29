@@ -15,6 +15,12 @@
     }
 
     .navbar-nav {
+      .divider {
+        height: 35px;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.35);
+      }
+
       &:first-child {
         @include media-breakpoint-down(md) {
           height: 30vh;
@@ -56,19 +62,16 @@
             }
           }
 
-          & .divider {
-            height: 35px;
-            width: 1px;
-            background-color: rgba(255, 255, 255, 0.35);
-          }
-
           .nav-link {
             color: white;
             font-size: 16px;
-            line-height: 19px;
             transition: color 0.1s ease-in;
+            @include media-breakpoint-down(lg) {
+              width: 100%;
+              line-height: 64px;
+            }
 
-            &:hover{
+            &:hover {
               color: $secondary-color;
               transition: color 0.1s ease-in;
             }
@@ -84,14 +87,19 @@
               border-radius: 10px;
               height: inherit;
               transition: all 0.3s ease;
-              @include media-breakpoint-down(md) {
-                border: 1px solid #1CB867;
+              width: 100%;
+              @include media-breakpoint-down(lg) {
+                background-color: #1CB867;
+                font-size: 22px;
+                height: 64px;
+                border: none;
+                width: 75%;
               }
 
               &:hover {
                 background-color: #1CB867;
                 border-color: #1CB867;
-                transition: all 0.3s ease;
+                transition: all 0.3s;
                 color: white;
               }
             }

@@ -1,29 +1,51 @@
 .success-stories {
   background: #FBF8F6;
-.container {
-  
-}
-  h5 {
+
+  .container {
+
+  }
+
+  .stories-link {
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-
+    text-decoration: none;
     color: #0E6B3B;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #1CB867;
+      transition: color 0.3s;
+    }
   }
 
   .carousel {
-    .carousel-item {
-      .left {
-
+    .carousel-inner {
+      &.active {
+        opacity: 1;
       }
+    }
+
+    .carousel-item {
+      opacity: 0;
+      -webkit-transition-property: opacity;
+      -moz-transition-property: opacity;
+      -o-transition-property: opacity;
+      transition-property: opacity;
 
       .right {
-        h3 {
+        .stories-header {
           font-weight: bold;
           font-size: 28px;
           line-height: 33px;
-
+          text-decoration: none;
           color: #000000;
+          transition: color 0.1s;
+
+          &:hover {
+            color: #454343;
+            transition: color 0.1s;
+          }
         }
 
         p {
@@ -33,13 +55,18 @@
           color: #555555;
         }
 
-        a {
+        .stories-read {
           font-weight: bold;
           font-size: 16px;
           line-height: 19px;
-
+          text-decoration: none;
           color: #0E6B3B;
+          transition: color 0.3s;
 
+          &:hover {
+            color: #1CB867;
+            transition: color 0.3s;
+          }
         }
       }
     }
@@ -60,7 +87,7 @@
 
   .carousel-indicators {
     position: absolute;
-    bottom: -30px;
+    bottom: -40px;
 
     li {
       width: 10px;
@@ -75,3 +102,16 @@
   }
 
 }
+
+.carousel-fade .carousel-inner .carousel-item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+

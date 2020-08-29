@@ -21,7 +21,12 @@
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-
+    transition: background-color 0.3s ease;
     color: #FFFFFF;
+
+    &:hover {
+      background-color: #22e37f;
+      transition: background-color 0.3s ease;
+    }
   }
 }
