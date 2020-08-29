@@ -47,41 +47,6 @@
 
       color: #7E7E7E;
     }
-
-    .percentage-bar {
-      position: relative;
-      background: #DCE8E2;
-      border-radius: 6px;
-      width: 100%;
-      height: 10px;
-
-      .percentage-amount {
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 6px;
-        width: 30%;
-        height: 10px;
-        background: #1CB867;
-      }
-    }
-
-    .raised {
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 15px;
-
-      color: #000000;
-
-      span {
-        font-size: 13px;
-        line-height: 15px;
-
-        color: #000000;
-
-
-      }
-    }
   }
 
   .see-all {
@@ -91,7 +56,8 @@
     text-decoration: none;
     color: #0D6135;
     transition: color 0.3s;
-    .svg-path{
+
+    .svg-path {
       transition: fill 0.3s;
     }
 
@@ -99,10 +65,37 @@
     &:hover {
       color: #1CB867;
       transition: color 0.3s;
-      .svg-path{
+
+      .svg-path {
         fill: #1CB867;
         transition: fill 0.3s;
       }
     }
   }
+}
+
+.percentage-bar {
+  position: relative;
+  background: #DCE8E2;
+  border-radius: 6px;
+  width: 100%;
+  height: 10px;
+
+  .percentage-amount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    width: 30%;
+    height: 10px;
+    background: #1CB867;
+  }
+}
+
+.raised {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #000000;
 }
