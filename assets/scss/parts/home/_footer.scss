@@ -12,37 +12,4 @@
 
     }
   }
-
-  .social-links {
-    a {
-      text-decoration: none;
-      transition: all 1s ease;
-
-      &:first-child {
-        transition: all 1s;
-        svg {
-          border-radius: 6px;
-          transition: background 1s ease;
-
-          &:hover {
-            background: #d6249f;
-            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-            transition: background 1s ease;
-          }
-        }
-      }
-
-      &:last-child {
-        svg {
-          border-radius: 6px;
-          transition: all 0.5s;
-
-          &:hover {
-            background-color: dodgerblue;
-            transition: all 0.5s;
-          }
-        }
-      }
-    }
-  }
 }

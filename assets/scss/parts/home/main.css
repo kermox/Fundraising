@@ -10112,6 +10112,11 @@ h3 {
 .navigation.dark .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle:hover {
   color: black;
 }
+@media (max-width: 991.98px) {
+  .navigation.dark .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle:hover {
+    color: white;
+  }
+}
 
 .header {
   width: 100%;
@@ -10176,8 +10181,12 @@ h3 {
   transition: background-color 0.3s ease;
 }
 
-* {
+.navigation .contact .footer .blog .success-stories {
   font-family: "Roboto", sans-serif;
+}
+
+.article .content-header .profile-nav {
+  font-family: "Open Sans", sans-serif;
 }
 
 #overlay {
@@ -10394,6 +10403,9 @@ h3 {
   background-color: #22e37f;
   transition: background-color 0.3s ease;
 }
+.contact-profile {
+  background: rgba(222, 255, 238, 0.35);
+}
 
 .blog {
   background-color: #FBF8F6;
@@ -10446,6 +10458,9 @@ h3 {
   color: #454343;
   transition: color 0.1s;
 }
+.blog-profile {
+  background-color: white;
+}
 
 .footer {
   height: 72px;
@@ -10456,30 +10471,6 @@ h3 {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
-}
-.footer .social-links a {
-  text-decoration: none;
-  transition: all 1s ease;
-}
-.footer .social-links a:first-child {
-  transition: all 1s;
-}
-.footer .social-links a:first-child svg {
-  border-radius: 6px;
-  transition: background 1s ease;
-}
-.footer .social-links a:first-child svg:hover {
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  transition: background 1s ease;
-}
-.footer .social-links a:last-child svg {
-  border-radius: 6px;
-  transition: all 0.5s;
-}
-.footer .social-links a:last-child svg:hover {
-  background-color: dodgerblue;
-  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=main.css.map */

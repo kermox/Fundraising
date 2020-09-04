@@ -1,0 +1,117 @@
+.article {
+
+  .article-content {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 1px solid #0E6B3B;
+  }
+
+  .latest-donations {
+    border-top: 3px solid #0E6B3B;;
+  }
+
+  .latest-donations-header {
+    a {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: #0E6B3B;
+      transition: color 0.3s;
+      text-decoration: none;
+
+      &:hover {
+        color: #1CB867;
+        transition: color 0.3s;
+      }
+    }
+  }
+
+  .latest-donations-body {
+    .latest-donations-body-item {
+      border-top: 1px solid #E8E8E8;
+
+      &:last-child {
+        border-bottom: 1px solid #E8E8E8;
+      }
+    }
+
+    .donation-sum {
+      span {
+        font-weight: bold;
+        text-align: center;
+        color: #0E6B3B;
+      }
+    }
+
+    .user {
+      .username {
+        font-weight: bold;
+        font-size: 13px;
+        color: black;
+        text-decoration: none;
+        transition: color 0.1s;
+
+        &:hover {
+          color: #454343;
+          transition: color 0.1s;
+        }
+      }
+
+      .time {
+        font-size: 12px;
+        color: #666666;
+      }
+    }
+
+    .message {
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  .latest-donations-footer {
+    .see-all {
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration: none;
+      color: #0D6135;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #1CB867;
+        transition: color 0.3s;
+
+        .svg-path {
+          fill: #1CB867;
+          transition: fill 0.3s;
+        }
+      }
+    }
+  }
+
+  blockquote {
+    border-top: 1px solid #0E6B3B;
+    border-bottom: 1px solid #0E6B3B;
+  }
+
+  .blockquote-text {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #0E6B3B;
+  }
+
+  .article-link {
+    color: #0E6B3B;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-decoration: none;
+
+    &:hover {
+      color: #1CB867;
+      transition: color 0.3s;
+    }
+  }
+}
