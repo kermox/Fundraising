@@ -12,4 +12,14 @@
 
     }
   }
+  .social-links {
+    a{
+      text-decoration: none;
+      transition: opacity 0.3s;
+      &:hover {
+        opacity: 0.7;
+        transition: opacity 0.3s;
+      }
+    }
+  }
 }

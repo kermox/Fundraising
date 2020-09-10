@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="assets/scss/parts/profile/main.css">
 </head>
 <body>
-<section class="navigation dark">
-    <div class="place-keeper"></div>
-    <nav class="navbar navbar-expand-lg w-100 ">
+
+<header id="whiteNavigation" class="navigation navigation-white">
+    <div class="nav-place-keeper"></div>
+    <nav class="navbar navbar-expand-lg w-100" id="whiteNavigationNavbar">
         <div class="container">
+            <!--Logo-->
             <a class="navbar-brand" href="#">Logo</a>
+            <!-- Hamburger-->
             <button class="navbar-toggler d-flex flex-column justify-content-center align-items-center"
                     type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent"
@@ -25,21 +28,24 @@
                 <div class="navbar-toggler-element"></div>
                 <div class="navbar-toggler-element"></div>
             </button>
-
+            <!--Navigation -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav w-100 d-flex align-items-center">
-                    <li class="nav-item col col-lg-3 col-xl-4 d-flex justify-content-lg-end justify-content-center mt-5 mt-lg-0 mb-3 mb-lg-0">
-                        <a class="nav-link d-flex justify-content-center align-items-center" href="#">About Us</a>
+                <!--Navigation Links-->
+                <ul class="navbar-nav w-100 d-flex flex-column flex-lg-row justify-content-start justify-content-lg-end align-items-center ">
+                    <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#">About
+                            Us</a>
                     </li>
-                    <li class="nav-item col d-flex justify-content-center d-lg-block mb-3 mb-lg-0">
+                    <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
                         <a class="nav-link d-flex justify-content-center align-items-center" href="#">Success
                             stories</a>
                     </li>
-                    <li class="nav-item col d-flex justify-content-center d-lg-block mb-3 mb-lg-0">
-                        <a class="nav-link d-flex justify-content-center align-items-center" href="#">Contact Us</a>
+                    <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#">Contact
+                            Us</a>
                     </li>
                     <li class="divider"></li>
-                    <li class="nav-item dropdown collapse d-lg-block d-flex flex-column justify-content-center align-items-center px-3">
+                    <li class="nav-item dropdown collapse d-flex d-lg-block flex-column justify-content-center align-items-center px-3 mr-0 mr-lg-4">
                         <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center pb-0 pb-lg-2"
                            href="#" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,19 +56,20 @@
                             </svg>
                             Eng
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right pt-0 mt-0" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item rounded h-100 pt-0 pt-lg-1" hreflang="ua" href="#">Ua</a>
+                        <div class="dropdown-menu dropdown-menu-right d-flex justify-content-center w-100"
+                             aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item rounded d-flex align-items-center justify-content-center py-3 py-lg-1"
+                               hreflang="ua" href="#">Ua</a>
                         </div>
                     </li>
-                    <li class="nav-item col d-lg-block d-flex justify-content-center pt-4 pt-lg-0">
-                        <a class="nav-link nav-button d-flex justify-content-center align-items-center" href="#">Start
-                            helping</a>
-                    </li>
                 </ul>
+                <!--Action button-->
+                <a class="nav-button d-flex justify-content-center align-items-center px-3 py-2" href="#">Start
+                    helping</a>
             </div>
         </div>
     </nav>
-</section>
+</header>
 <section class="content-header">
     <div class="container py-4">
         <h2 class="mb-4">Cindy should live and become the great scientist as she was dreaming to be</h2>
@@ -126,14 +133,14 @@
                 <div class="info-box mt-4">
                     <span class="label w-50">Share</span>
                     <div class="d-flex justify-content-around align-items-center">
-                        <a href="#" class="my-4">
+                        <a href="#" class="info-box-link d-flex justify-content-center py-4">
                             <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.0011 2.16882C7.01892 2.16882 2.16884 7.01891 2.16884 13.0011C2.16884 18.4069 6.12951 22.8876 11.3089 23.7033V16.133H8.55726V13.0011H11.3089V10.6145C11.3089 7.89749 12.9263 6.39924 15.3996 6.39924C16.5848 6.39924 17.8263 6.61049 17.8263 6.61049V9.27441H16.4569C15.1136 9.27441 14.6933 10.1107 14.6933 10.9677V12.9989H17.6952L17.2153 16.1308H14.6933V23.7012C19.8727 22.8897 23.8333 18.408 23.8333 13.0011C23.8333 7.01891 18.9833 2.16882 13.0011 2.16882Z"
                                       fill="#395998"/>
                             </svg>
                         </a>
-                        <a href="#" class="my-4">
+                        <a href="#" class="info-box-link d-flex justify-content-center py-4">
                             <svg width="27" height="22" viewBox="0 0 27 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0)">
@@ -147,7 +154,7 @@
                                 </defs>
                             </svg>
                         </a>
-                        <a href="#" class="my-4">
+                        <a href="#" class="info-box-link d-flex justify-content-center py-4">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -155,7 +162,7 @@
                                       fill="#818181"/>
                             </svg>
                         </a>
-                        <a href="#" class="my-4">
+                        <a href="#" class="info-box-link d-flex justify-content-center py-4">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 0C5.37253 0 0 5.37253 0 12C0 18.6275 5.37253 24 12 24C18.6275 24 24 18.6275 24 12C24 5.37253 18.6275 0 12 0Z"
@@ -168,7 +175,7 @@
                                       fill="#B5CFE4"/>
                             </svg>
                         </a>
-                        <a href="#" class="my-4">
+                        <a href="#" class="info-box-link d-flex justify-content-center py-4">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.22199 19.778C4.68587 20.2426 5.23696 20.6109 5.84361 20.8618C6.45026 21.1127 7.10051 21.2412 7.75699 21.24C8.41362 21.2412 9.06401 21.1126 9.67082 20.8617C10.2776 20.6108 10.8289 20.2425 11.293 19.778L14.121 16.949L12.707 15.535L9.87899 18.364C9.31546 18.925 8.55266 19.24 7.75749 19.24C6.96232 19.24 6.19952 18.925 5.63599 18.364C5.0745 17.8008 4.7592 17.0379 4.7592 16.2425C4.7592 15.4472 5.0745 14.6843 5.63599 14.121L8.46499 11.293L7.05099 9.87902L4.22199 12.707C3.2858 13.6455 2.76004 14.9169 2.76004 16.2425C2.76004 17.5681 3.2858 18.8396 4.22199 19.778ZM19.778 11.293C20.7137 10.3543 21.2391 9.08294 21.2391 7.75752C21.2391 6.43211 20.7137 5.16074 19.778 4.22202C18.8395 3.28583 17.5681 2.76007 16.2425 2.76007C14.9169 2.76007 13.6454 3.28583 12.707 4.22202L9.87899 7.05102L11.293 8.46502L14.121 5.63602C14.6845 5.07501 15.4473 4.76005 16.2425 4.76005C17.0377 4.76005 17.8005 5.07501 18.364 5.63602C18.9255 6.19929 19.2408 6.96219 19.2408 7.75752C19.2408 8.55286 18.9255 9.31575 18.364 9.87902L15.535 12.707L16.949 14.121L19.778 11.293Z"
@@ -177,7 +184,7 @@
                                       fill="black"/>
                             </svg>
                         </a>
-                        <a href="#" class="my-4">
+                        <a href="#" class="info-box-link d-flex justify-content-center py-4">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0)">
@@ -218,7 +225,8 @@
         </div>
         <div class="location d-flex align-items-center py-3">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="svg-path" d="M19 9C19 8.08075 18.8189 7.1705 18.4672 6.32122C18.1154 5.47194 17.5998 4.70026 16.9497 4.05025C16.2997 3.40024 15.5281 2.88463 14.6788 2.53284C13.8295 2.18106 12.9193 2 12 2C11.0807 2 10.1705 2.18106 9.32122 2.53284C8.47194 2.88463 7.70026 3.40024 7.05025 4.05025C6.40024 4.70026 5.88463 5.47194 5.53284 6.32122C5.18106 7.1705 5 8.08075 5 9C5 10.387 5.41 11.677 6.105 12.765H6.097C8.457 16.46 12 22 12 22L17.903 12.765H17.896C18.6164 11.6414 18.9995 10.3347 19 9ZM12 12C11.2044 12 10.4413 11.6839 9.87868 11.1213C9.31607 10.5587 9 9.79565 9 9C9 8.20435 9.31607 7.44129 9.87868 6.87868C10.4413 6.31607 11.2044 6 12 6C12.7956 6 13.5587 6.31607 14.1213 6.87868C14.6839 7.44129 15 8.20435 15 9C15 9.79565 14.6839 10.5587 14.1213 11.1213C13.5587 11.6839 12.7956 12 12 12Z"
+                <path class="svg-path"
+                      d="M19 9C19 8.08075 18.8189 7.1705 18.4672 6.32122C18.1154 5.47194 17.5998 4.70026 16.9497 4.05025C16.2997 3.40024 15.5281 2.88463 14.6788 2.53284C13.8295 2.18106 12.9193 2 12 2C11.0807 2 10.1705 2.18106 9.32122 2.53284C8.47194 2.88463 7.70026 3.40024 7.05025 4.05025C6.40024 4.70026 5.88463 5.47194 5.53284 6.32122C5.18106 7.1705 5 8.08075 5 9C5 10.387 5.41 11.677 6.105 12.765H6.097C8.457 16.46 12 22 12 22L17.903 12.765H17.896C18.6164 11.6414 18.9995 10.3347 19 9ZM12 12C11.2044 12 10.4413 11.6839 9.87868 11.1213C9.31607 10.5587 9 9.79565 9 9C9 8.20435 9.31607 7.44129 9.87868 6.87868C10.4413 6.31607 11.2044 6 12 6C12.7956 6 13.5587 6.31607 14.1213 6.87868C14.6839 7.44129 15 8.20435 15 9C15 9.79565 14.6839 10.5587 14.1213 11.1213C13.5587 11.6839 12.7956 12 12 12Z"
                       fill="black"/>
             </svg>
             <span class="pl-2">Chicago, IL</span>
@@ -227,161 +235,187 @@
 </section>
 <section class="profile-nav">
     <div class="container">
-        <nav class="navbar navbar-expand navbar-light">
-            <ul class="navbar-nav d-flex flex-wrap ">
-                <li class="nav-item active">
-                    <a class="nav-link py-2 py-lg-4 px-4" href="#">General <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link py-2 py-lg-4 px-4" href="#">Diagnosis</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link py-2 py-lg-4 px-4" href="#">Documents <sup>12</sup></a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link py-2 py-lg-4 px-4 " href="#">Contacts</a>
-                </li>
-            </ul>
-        </nav>
+        <ul class="nav d-flex flex-wrap py-4" id="pills-tab" role="tablist">
+            <li class="nav-item active">
+                <a class="nav-link py-2 py-lg-4 px-4 active" id="nav-genetal-tab" data-toggle="tab" href="#nav-general"
+                   role="tab" aria-controls="nav-general" aria-selected="true"> General </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link py-2 py-lg-4 px-4"id="nav-diagnosis-tab" data-toggle="tab" href="#nav-diagnosis"
+                   role="tab" aria-controls="nav-diagnosis" aria-selected="false">Diagnosis</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link py-2 py-lg-4 px-4" id="nav-documents-tab" data-toggle="tab" href="#nav-documents"
+                   role="tab" aria-controls="nav-documents" aria-selected="false">Documents <sup>12</sup></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link py-2 py-lg-4 px-4 " id="nav-contacts-tab" data-toggle="tab" href="#nav-contacts"
+                   role="tab" aria-controls="nav-contacts" aria-selected="false">Contacts</a>
+            </li>
+        </ul>
     </div>
 </section>
-<section class="article pb-5">
+<section class="profile-tabs pb-5">
     <div class="container">
-        <div class="row py-4">
-            <div class="article-content pt-3 pb-5 pb-lg-3 col-12 col-lg-8">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    <span class="font-weight-bold">cillum dolore eu fugiat nulla pariatur</span>
-                    . Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab">
+                <div class="row py-4">
+                    <div class="article-content pt-3 pb-5 pb-lg-3 col-12 col-lg-8">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse
+                            <span class="font-weight-bold">cillum dolore eu fugiat nulla pariatur</span>
+                            . Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.
 
-                <blockquote class="py-3" cite="http://www.idontknow.com/">
-                    <div class="row">
-                        <div class="blockquote-icon d-flex justify-content-center pr-0 pl-4">
-                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.45927 11.011C8.91452 8.34925 12.6298 7 17.5 7H19.25V11.9332L17.843 12.215C15.4455 12.6945 13.7778 13.6377 12.8853 15.022C12.4196 15.7677 12.1555 16.6216 12.1188 17.5H17.5C17.9641 17.5 18.4093 17.6844 18.7375 18.0126C19.0656 18.3408 19.25 18.7859 19.25 19.25V31.5C19.25 33.4302 17.6803 35 15.75 35H5.25002C4.78589 35 4.34077 34.8156 4.01258 34.4874C3.68439 34.1592 3.50002 33.7141 3.50002 33.25V24.5L3.50527 19.3917C3.48952 19.1975 3.15702 14.595 6.45927 11.011ZM35 35H24.5C24.0359 35 23.5908 34.8156 23.2626 34.4874C22.9344 34.1592 22.75 33.7141 22.75 33.25V24.5L22.7553 19.3917C22.7395 19.1975 22.407 14.595 25.7093 11.011C28.1645 8.34925 31.8798 7 36.75 7H38.5V11.9332L37.093 12.215C34.6955 12.6945 33.0278 13.6377 32.1353 15.022C31.6696 15.7677 31.4055 16.6216 31.3688 17.5H36.75C37.2141 17.5 37.6593 17.6844 37.9875 18.0126C38.3156 18.3408 38.5 18.7859 38.5 19.25V31.5C38.5 33.4302 36.9303 35 35 35Z"
-                                      fill="#BFE6D2"/>
-                            </svg>
+                        <blockquote class="py-3" cite="http://www.idontknow.com/">
+                            <div class="row">
+                                <div class="blockquote-icon d-flex justify-content-center pr-0 pl-4">
+                                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.45927 11.011C8.91452 8.34925 12.6298 7 17.5 7H19.25V11.9332L17.843 12.215C15.4455 12.6945 13.7778 13.6377 12.8853 15.022C12.4196 15.7677 12.1555 16.6216 12.1188 17.5H17.5C17.9641 17.5 18.4093 17.6844 18.7375 18.0126C19.0656 18.3408 19.25 18.7859 19.25 19.25V31.5C19.25 33.4302 17.6803 35 15.75 35H5.25002C4.78589 35 4.34077 34.8156 4.01258 34.4874C3.68439 34.1592 3.50002 33.7141 3.50002 33.25V24.5L3.50527 19.3917C3.48952 19.1975 3.15702 14.595 6.45927 11.011ZM35 35H24.5C24.0359 35 23.5908 34.8156 23.2626 34.4874C22.9344 34.1592 22.75 33.7141 22.75 33.25V24.5L22.7553 19.3917C22.7395 19.1975 22.407 14.595 25.7093 11.011C28.1645 8.34925 31.8798 7 36.75 7H38.5V11.9332L37.093 12.215C34.6955 12.6945 33.0278 13.6377 32.1353 15.022C31.6696 15.7677 31.4055 16.6216 31.3688 17.5H36.75C37.2141 17.5 37.6593 17.6844 37.9875 18.0126C38.3156 18.3408 38.5 18.7859 38.5 19.25V31.5C38.5 33.4302 36.9303 35 35 35Z"
+                                              fill="#BFE6D2"/>
+                                    </svg>
+                                </div>
+                                <div class="blockquote-text col">
+                                    But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising
+                                    pain was born and I will give you a complete account of the system, and expound the
+                                    actual
+                                    teachings of the great explorer of the truth, the master-builder of human happiness.
+                                </div>
+                            </div>
+                        </blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea <a href="#" class="article-link">commodo consequat</a>. Duis aute irure dolor in
+                        reprehenderit
+                        in
+                        voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
+                        <div class="img-container d-flex justify-content-center py-5">
+                            <img class="img-fluid" src="assets/img/article-img.png" alt="Girl temperature measuring"
+                                 class="img-fluid">
                         </div>
-                        <div class="blockquote-text col">
-                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising
-                            pain was born and I will give you a complete account of the system, and expound the actual
-                            teachings of the great explorer of the truth, the master-builder of human happiness.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea <a href="#" class="article-link">commodo consequat</a>. Duis aute irure dolor in
+                        reprehenderit
+                        in
+                        voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="latest-donations py-3 col-12 col-lg-4">
+                        <div class="latest-donations-header">
+                            <h6><a href="#">Latest donations(<span class="num">112</span>)</a></h6>
+                        </div>
+                        <div class="latest-donations-body py-2">
+                            <div class="latest-donations-body-item py-2">
+                                <div class="row">
+                                    <div class="donations-num col-2 pr-0 pr-lg-auto">
+                                        <span>112</span>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="user">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2C6.579 2 2 6.579 2 12C2 17.421 6.579 22 12 22C17.421 22 22 17.421 22 12C22 6.579 17.421 2 12 2ZM12 7C13.727 7 15 8.272 15 10C15 11.728 13.727 13 12 13C10.274 13 9 11.728 9 10C9 8.272 10.274 7 12 7ZM6.894 16.772C7.791 15.452 9.287 14.572 11 14.572H13C14.714 14.572 16.209 15.452 17.106 16.772C15.828 18.14 14.015 19 12 19C9.985 19 8.172 18.14 6.894 16.772Z"
+                                                      fill="#DADADA"/>
+                                            </svg>
+                                            <a class="username" href="#">Anonymous</a>
+                                            <br>
+                                            <p class="time">2 hours ago</p>
+                                        </div>
+                                        <div class="message">
+                                            God bless You, girl!
+                                        </div>
+                                    </div>
+                                    <div class="donation-sum col-2 pl-0 pr-lg-auto">
+                                        <span>$300</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-donations-body-item py-2">
+                                <div class="row">
+                                    <div class="donations-num col-2 pr-0 pr-lg-auto">
+                                        <span>111</span>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="user">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2C6.579 2 2 6.579 2 12C2 17.421 6.579 22 12 22C17.421 22 22 17.421 22 12C22 6.579 17.421 2 12 2ZM12 7C13.727 7 15 8.272 15 10C15 11.728 13.727 13 12 13C10.274 13 9 11.728 9 10C9 8.272 10.274 7 12 7ZM6.894 16.772C7.791 15.452 9.287 14.572 11 14.572H13C14.714 14.572 16.209 15.452 17.106 16.772C15.828 18.14 14.015 19 12 19C9.985 19 8.172 18.14 6.894 16.772Z"
+                                                      fill="#DADADA"/>
+                                            </svg>
+                                            <a class="username" href="#">Anonymous</a>
+                                            <br>
+                                            <p class="time">2 hours ago</p>
+                                        </div>
+                                        <div class="message">
+                                            Everything will be fine!
+                                        </div>
+                                    </div>
+                                    <div class="donation-sum col-2 pl-0 pr-lg-auto">
+                                        <span>$300</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latest-donations-body-item py-2">
+                                <div class="row">
+                                    <div class="donations-num col-2 pr-0 pr-lg-auto">
+                                        <span>110</span>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="user">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2C6.579 2 2 6.579 2 12C2 17.421 6.579 22 12 22C17.421 22 22 17.421 22 12C22 6.579 17.421 2 12 2ZM12 7C13.727 7 15 8.272 15 10C15 11.728 13.727 13 12 13C10.274 13 9 11.728 9 10C9 8.272 10.274 7 12 7ZM6.894 16.772C7.791 15.452 9.287 14.572 11 14.572H13C14.714 14.572 16.209 15.452 17.106 16.772C15.828 18.14 14.015 19 12 19C9.985 19 8.172 18.14 6.894 16.772Z"
+                                                      fill="#DADADA"/>
+                                            </svg>
+                                            <a class="username" href="#">Anonymous</a>
+                                            <br>
+                                            <p class="time">2 hours ago</p>
+                                        </div>
+                                        <div class="message">
+                                        </div>
+                                    </div>
+                                    <div class="donation-sum col-2 pl-0 pr-lg-auto">
+                                        <span>$300</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="latest-donations-footer py-3">
+                            <a href="#" class="see-all d-flex align-items-center w-100 justify-content-center">See all
+                                <svg class="ml-2" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path d="M9.18752 7L3.50003 12.6875V14L10.5 7L3.50003 0V1.31249L9.18752 7Z"
+                                              fill="#0E6B3B"/>
+                                    </g>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                </blockquote>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea <a href="#" class="article-link">commodo consequat</a>. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-                <div class="img-container d-flex justify-content-center py-5">
-                    <img class="img-fluid" src="assets/img/article-img.png" alt="Girl temperature measuring"
-                         class="img-fluid">
                 </div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea <a href="#" class="article-link">commodo consequat</a>. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-                </p>
             </div>
-            <div class="latest-donations py-3 col-12 col-lg-4">
-                <div class="latest-donations-header">
-                    <h6><a href="#">Latest donations(<span class="num">112</span>)</a></h6>
-                </div>
-                <div class="latest-donations-body py-2">
-                    <div class="latest-donations-body-item py-2">
-                        <div class="row">
-                            <div class="donations-num col-2 pr-0 pr-lg-auto">
-                                <span>112</span>
-                            </div>
-                            <div class="col-8">
-                                <div class="user">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 2C6.579 2 2 6.579 2 12C2 17.421 6.579 22 12 22C17.421 22 22 17.421 22 12C22 6.579 17.421 2 12 2ZM12 7C13.727 7 15 8.272 15 10C15 11.728 13.727 13 12 13C10.274 13 9 11.728 9 10C9 8.272 10.274 7 12 7ZM6.894 16.772C7.791 15.452 9.287 14.572 11 14.572H13C14.714 14.572 16.209 15.452 17.106 16.772C15.828 18.14 14.015 19 12 19C9.985 19 8.172 18.14 6.894 16.772Z"
-                                              fill="#DADADA"/>
-                                    </svg>
-                                    <a class="username" href="#">Anonymous</a>
-                                    <br>
-                                    <p class="time">2 hours ago</p>
-                                </div>
-                                <div class="message">
-                                    God bless You, girl!
-                                </div>
-                            </div>
-                            <div class="donation-sum col-2 pl-0 pr-lg-auto">
-                                <span>$300</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="latest-donations-body-item py-2">
-                        <div class="row">
-                            <div class="donations-num col-2 pr-0 pr-lg-auto">
-                                <span>111</span>
-                            </div>
-                            <div class="col-8">
-                                <div class="user">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 2C6.579 2 2 6.579 2 12C2 17.421 6.579 22 12 22C17.421 22 22 17.421 22 12C22 6.579 17.421 2 12 2ZM12 7C13.727 7 15 8.272 15 10C15 11.728 13.727 13 12 13C10.274 13 9 11.728 9 10C9 8.272 10.274 7 12 7ZM6.894 16.772C7.791 15.452 9.287 14.572 11 14.572H13C14.714 14.572 16.209 15.452 17.106 16.772C15.828 18.14 14.015 19 12 19C9.985 19 8.172 18.14 6.894 16.772Z"
-                                              fill="#DADADA"/>
-                                    </svg>
-                                    <a class="username" href="#">Anonymous</a>
-                                    <br>
-                                    <p class="time">2 hours ago</p>
-                                </div>
-                                <div class="message">
-                                    Everything will be fine!
-                                </div>
-                            </div>
-                            <div class="donation-sum col-2 pl-0 pr-lg-auto">
-                                <span>$300</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="latest-donations-body-item py-2">
-                        <div class="row">
-                            <div class="donations-num col-2 pr-0 pr-lg-auto">
-                                <span>110</span>
-                            </div>
-                            <div class="col-8">
-                                <div class="user">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 2C6.579 2 2 6.579 2 12C2 17.421 6.579 22 12 22C17.421 22 22 17.421 22 12C22 6.579 17.421 2 12 2ZM12 7C13.727 7 15 8.272 15 10C15 11.728 13.727 13 12 13C10.274 13 9 11.728 9 10C9 8.272 10.274 7 12 7ZM6.894 16.772C7.791 15.452 9.287 14.572 11 14.572H13C14.714 14.572 16.209 15.452 17.106 16.772C15.828 18.14 14.015 19 12 19C9.985 19 8.172 18.14 6.894 16.772Z"
-                                              fill="#DADADA"/>
-                                    </svg>
-                                    <a class="username" href="#">Anonymous</a>
-                                    <br>
-                                    <p class="time">2 hours ago</p>
-                                </div>
-                                <div class="message">
-                                </div>
-                            </div>
-                            <div class="donation-sum col-2 pl-0 pr-lg-auto">
-                                <span>$300</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="latest-donations-footer py-3">
-                    <a href="#" class="see-all d-flex align-items-center w-100 justify-content-center">See all
-                        <svg class="ml-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0)">
-                                <path d="M9.18752 7L3.50003 12.6875V14L10.5 7L3.50003 0V1.31249L9.18752 7Z"
-                                      fill="#0E6B3B"/>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+            <div class="tab-pane fade" id="nav-diagnosis" role="tabpanel" aria-labelledby="nav-diagnosis-tab">...</div>
+            <div class="tab-pane fade" id="nav-documents" role="tabpanel" aria-labelledby="nav-documents-tab">...</div>
+            <div class="tab-pane fade" id="nav-contacts" role="tabpanel" aria-labelledby="nav-contacts-tab">...</div>
         </div>
     </div>
 </section>
@@ -461,50 +495,53 @@
                           fill="white"/>
                 </svg>
             </a>
-            <a href="#"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="32px" height="32px" fill="white" viewBox="0 0 60.734 60.733" style="enable-background:new 0 0 60.734 60.733;"
-	 xml:space="preserve">
+            <a href="#">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="32px" height="32px" fill="white" viewBox="0 0 60.734 60.733"
+                     style="enable-background:new 0 0 60.734 60.733;"
+                     xml:space="preserve">
 <g>
 	<path d="M57.378,0.001H3.352C1.502,0.001,0,1.5,0,3.353v54.026c0,1.853,1.502,3.354,3.352,3.354h29.086V37.214h-7.914v-9.167h7.914
 		v-6.76c0-7.843,4.789-12.116,11.787-12.116c3.355,0,6.232,0.251,7.071,0.36v8.198l-4.854,0.002c-3.805,0-4.539,1.809-4.539,4.462
 		v5.851h9.078l-1.187,9.166h-7.892v23.52h15.475c1.852,0,3.355-1.503,3.355-3.351V3.351C60.731,1.5,59.23,0.001,57.378,0.001z"/>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-<g>
+                    <g>
 </g>
-</svg></a>
+</svg>
+            </a>
         </div>
     </div>
 </footer>
 
-<div id="overlay"></div>
 <!--Bootstrap JS-->
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/popper.js/dist/popper.js"></script>

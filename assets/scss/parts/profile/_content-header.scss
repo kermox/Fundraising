@@ -69,6 +69,15 @@
       border: 1px solid #DFDFDF;
       box-sizing: border-box;
       border-radius: 8px;
+      .info-box-link{
+        text-align: center;
+        width: 100%;
+        transition: all 0.3s;
+        &:hover {
+          opacity: 0.7;
+          transition: all 0.3s;
+        }
+      }
 
       .label {
         position: absolute;
@@ -96,8 +105,15 @@
         font-size: 14px;
         line-height: 16px;
         text-align: center;
-
+        text-decoration: none;
         color: #0E6B3B;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #1CB867;
+          border: none;
+          color: white;
+          transition: all 0.3s;
+        }
       }
     }
   }

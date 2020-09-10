@@ -1,10 +1,6 @@
 .success-stories {
   background: #FBF8F6;
 
-  .container {
-
-  }
-
   .stories-link {
     font-weight: bold;
     font-size: 24px;
@@ -20,11 +16,6 @@
   }
 
   .carousel {
-    .carousel-inner {
-      &.active {
-        opacity: 1;
-      }
-    }
 
     .carousel-item {
       opacity: 0;
@@ -32,6 +23,10 @@
       -moz-transition-property: opacity;
       -o-transition-property: opacity;
       transition-property: opacity;
+
+      &.active {
+        opacity: 1;
+      }
 
       .right {
         .stories-header {
@@ -41,6 +36,10 @@
           text-decoration: none;
           color: #000000;
           transition: color 0.1s;
+          width: 75%;
+          @include media-breakpoint-down(lg){
+            width: 100%;
+          }
 
           &:hover {
             color: #454343;
@@ -88,17 +87,5 @@
     }
   }
 
-}
-
-.carousel-fade .carousel-inner .carousel-item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active {
-  opacity: 1;
 }
 

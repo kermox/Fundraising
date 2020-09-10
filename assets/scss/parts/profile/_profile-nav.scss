@@ -11,9 +11,17 @@
     color: #7E7E7E;
     font-size: 16px;
     line-height: 19px;
+    transition: color 0.3s;
+    &:hover {
+      color: #5e5d5d;
+      transition: color 0.3s;
+    }
   }
 
   sup {
+    color: #0E6B3B;
+  }
+  .active{
     color: #0E6B3B;
   }
 }

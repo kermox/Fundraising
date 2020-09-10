@@ -1,4 +1,4 @@
-.article {
+.profile-tabs {
 
   .article-content {
     font-size: 16px;
@@ -76,6 +76,10 @@
       text-decoration: none;
       color: #0D6135;
       transition: color 0.3s;
+      @include media-breakpoint-down(lg){
+        font-size: 22px;
+        line-height: 26px;
+      }
 
       &:hover {
         color: #1CB867;

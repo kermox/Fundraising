@@ -1,3 +1,4 @@
+//Welcome page start navigation.
 .navigation {
   position: relative;
   z-index: 1000;
@@ -7,6 +8,7 @@
     left: 0;
     top: 0;
     background-color: transparent;
+    transition: all 0.3s;
 
     .navbar-brand {
       font-size: 28px;
@@ -14,19 +16,97 @@
       color: #FFFFFF;
     }
 
-    .navbar-nav {
-      .divider {
-        height: 35px;
-        width: 1px;
-        background-color: rgba(255, 255, 255, 0.35);
+    .navbar-toggler {
+      width: 45px;
+      height: 45px;
+      border: none;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+
+      outline: none;
+      transition: all 0.3s;
+      @include media-breakpoint-up(lg) {
+        display: none !important;
       }
 
-      &:first-child {
-        @include media-breakpoint-down(md) {
-          height: 30vh;
+      &-element {
+        width: 30px;
+        height: 0;
+        border: 1px solid #FFFFFF;
+        background-color: #FFFFFF;
+        transition: all 0.3s;
+        position: relative;
+
+        &:nth-child(1) {
+          top: -5px;
         }
 
-        .nav-item {
+        &:nth-child(2) {
+          top: 0;
+        }
+
+        &:nth-child(3) {
+          top: 5px;
+        }
+      }
+
+      &[aria-expanded='true'] {
+
+        background: white;
+        transition: all 0.3s;
+
+        .navbar-toggler-element {
+          border: 1px solid #1CB867;
+          transition: all 0.3s;
+        }
+
+        :nth-of-type(1) {
+          transform: rotate(45deg);
+          top: 2px;
+        }
+
+        :nth-of-type(2) {
+          opacity: 0;
+        }
+
+        :nth-of-type(3) {
+          transform: rotate(135deg);
+          top: -2px;
+        }
+      }
+    }
+
+    .navbar-collapse {
+
+      &.show {
+        height: 100vh !important;
+
+        .nav-button {
+          opacity: 1;
+          transition: opacity 0.5s ease;
+          transition-delay: 0.1s;
+        }
+      }
+
+      ul {
+        @include media-breakpoint-down(md) {
+          height: 100vh;
+        }
+
+        li {
+          @include media-breakpoint-down(md) {
+            width: 100%;
+          }
+
+          &.divider {
+            width: 2px;
+            background-color: rgba(255, 255, 255, 0.35);
+            height: 40px;
+            @include media-breakpoint-down(md) {
+              display: none;
+            }
+          }
+
           &.dropdown {
             .dropdown-menu {
               display: block;
@@ -38,31 +118,34 @@
               border: none;
               min-width: 3rem;
 
+              .dropdown-item {
+                height: 100%;
+                width: 100%;
+                @include media-breakpoint-down(md) {
+                  width: 30%;
+                }
+                color: white;
+                font-size: 16px;
+                background-color: rgba(255, 255, 255, 0.35);
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                  background-color: #1CB867;
+                  transition: background-color 0.3s ease;
+                }
+              }
+
               &.show {
-                display: block;
                 visibility: visible;
                 opacity: 1;
                 transform: translateY(0px);
                 transition: .5s ease all;
               }
             }
-
-            .dropdown-item {
-              height: 100%;
-              width: 100%;
-              color: white;
-              font-size: 16px;
-              background-color: rgba(255, 255, 255, 0.35);
-              transition: background-color 0.3s ease;
-
-              &:hover {
-                background-color: #1CB867;
-                transition: background-color 0.3s ease;
-              }
-            }
           }
 
-          .nav-link {
+
+          a {
             font-weight: bold;
             color: white;
             font-size: 16px;
@@ -70,12 +153,12 @@
 
             @include media-breakpoint-down(md) {
               width: 100%;
-              line-height: 64px;
+              height: 15vh;
             }
 
             &:hover {
               color: $secondary-color;
-              transition: color 0.1s ease-in;
+              transition: color 0.1s;
             }
 
             &.dropdown-toggle {
@@ -83,176 +166,131 @@
                 color: white;
               }
             }
-
-            &.nav-button {
-              border: 1px solid white;
-              border-radius: 10px;
-              transition: all 0.3s ease;
-              width: 100%;
-              @include media-breakpoint-down(md) {
-                background-color: #1CB867;
-                font-size: 22px;
-                height: 64px;
-                border: none;
-                width: 75%;
-              }
-
-              &:hover {
-                background-color: #1CB867;
-                border-color: #1CB867;
-                transition: all 0.3s;
-                color: white;
-              }
-            }
           }
         }
       }
     }
-  }
 
-  .navbar-toggler {
-    width: 45px;
-    height: 45px;
-    border: none;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 3px;
-
-    outline: none;
-    transition: all 0.3s;
-    @include media-breakpoint-up(lg) {
-      display: none !important;
-    }
-
-    &-element {
-      width: 30px;
-      height: 0;
-      border: 1px solid #FFFFFF;
-      background-color: #FFFFFF;
-      transition: all 0.3s;
-      position: absolute;
-
-      &:nth-child(1) {
-        position: relative;
-        top: -5px;
-      }
-
-      &:nth-child(2) {
-        position: relative;
-        top: 0;
-
-      }
-
-      &:nth-child(3) {
-        position: relative;
-        top: 5px;
-      }
-    }
-
-    &[aria-expanded='true'] {
-
-      background: white;
-      transition: all 0.3s;
-
-      :nth-of-type(1) {
-        transform: rotate(45deg);
-        transition: all 0.3s;
-        top: 2px;
-        background-color: #1CB867;
-        border: 1px solid #1CB867;
-      }
-
-      :nth-of-type(2) {
-        opacity: 0;
-        transition: all 0.3s;
-        background-color: #1CB867;
-        border: 1px solid #1CB867;
-      }
-
-      :nth-of-type(3) {
-        transform: rotate(135deg);
-        transition: all 0.3s;
-        top: -2px;
-        background-color: #1CB867;
-        border: 1px solid #1CB867;
-      }
-    }
-  }
-
-  &.dark {
-    .place-keeper{
-      position: relative;
-      left: 0;
-      top: 0;
-      width: 100vw;
-      height: 69px;
-      display: none;
-      @include media-breakpoint-down(md){
-        display: block;
-      }
-    }
-    .navbar {
-      position: relative;
-      border-bottom: 1px solid #E0E0E0;
-      @include media-breakpoint-down(md){
-        border: none;
+    .nav-button {
+      width: 25%;
+      border: 1px solid white;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: white;
+      @include media-breakpoint-down(md) {
         position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -150%);
+        width: 66%;
+        background-color: #1CB867;
+        font-size: 22px;
+        height: 64px;
+        border: none;
+        opacity: 0;
+      }
+
+      &:hover {
+        background-color: #1CB867;
+        border-color: #1CB867;
+        transition: all 0.3s;
+        color: white;
+      }
+    }
+  }
+
+  // Navigation when in active state and starting navigation for blog and profile pages.
+  &.navigation-white {
+    .nav-place-keeper {
+      height: 68px;
+      width: 100%;
+    }
+
+    .navbar {
+      background: white;
+
+      @include media-breakpoint-down(md) {
+        border: none;
       }
 
       .navbar-brand {
         color: #1CB867;
       }
-      .navbar-toggler{
-        background: rgba(0, 0, 0, 0.3);
+
+      .navbar-toggler {
+        background: transparent;
+
+        &-element {
+          border-color: black;
+        }
       }
 
-      .navbar-nav {
-        .nav-item {
+      .nav-button {
+        color: #0E6B3B;
+        border-color: #0E6B3B;
+        @include media-breakpoint-down(md) {
+          color: white;
+        }
+      }
+
+      ul {
+        li {
+          &.divider {
+            background-color: rgba(28, 184, 103, 0.35);
+          }
+
           &.dropdown {
-            .dropdown-item {
-              color: white;
-              font-size: 16px;
-              background-color: rgba(0, 0, 0, 0.7);
-              transition: background-color 0.3s ease;
+            .dropdown-toggle {
+              svg {
+                path {
+                  fill: black;
+                }
+              }
 
               &:hover {
-                background-color: #1CB867;
-                transition: background-color 0.3s ease;
+                color: black;
+              }
+            }
+
+            .dropdown-menu {
+              .dropdown-item {
+                background-color: rgba(0, 0, 0, 0.7);
               }
             }
           }
 
-          .nav-link {
+          a {
             color: black;
-            @include media-breakpoint-down(md){
-              color: white;
-            }
-            &.nav-button{
-              color: #0E6B3B;
-              border-color: #0E6B3B;
-              @include media-breakpoint-down(md){
-                color: white;
-              }
-            }
-
-            &.dropdown-toggle {
-              svg{
-                path{
-                  fill: black;
-                  @include media-breakpoint-down(md){
-                    fill: white;
-                  }
-                }
-              }
-              &:hover {
-                color: black;
-                @include media-breakpoint-down(md){
-                  color: white;
-                }
-              }
-            }
           }
         }
       }
+
     }
   }
+  // Add fixed position and shadow when in active state.
+  &.active {
+    .navbar {
+      position: fixed;
+      transition: all 0.3s ease;
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+      0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+
+// Background styling for collapse navigation in .show state.
+.nav-bg-dark {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+// Background styling for collapse navigation in .show state.
+.nav-bg-light {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(4px) !important;
 }

@@ -4,22 +4,3 @@
 .article .content-header .profile-nav {
   font-family: 'Open Sans', sans-serif;
 }
-
-#overlay {
-  position: absolute; /* Sit on top of the page content */
-  display: block;
-  opacity: 1;
-  width: 100%; /* Full width (cover the whole page) */
-  height: 0; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
-  backdrop-filter: blur(4px);
-  z-index: 999; /* Specify a stack order in case you're using a different order for other elements */
-  transition: all 0.4s;
-}
-
-.overlay-display {
-  height: 100vh !important;
-  transition: all 0.4s;
-}

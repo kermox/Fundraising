@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <!--Css-->
     <link rel="stylesheet" href="assets/scss/parts/home/main.css">
+    <link rel="stylesheet" href="assets/scss/parts/home/_people.scss">
 </head>
 <body>
 
-<section class="navigation">
-    <nav class="navbar navbar-expand-lg w-100">
+<header id="navigation" class="navigation">
+    <nav class="navbar navbar-expand-lg w-100" id="navbar">
         <div class="container">
+            <!--Logo-->
             <a class="navbar-brand" href="#">Logo</a>
+            <!-- Hamburger-->
             <button class="navbar-toggler d-flex flex-column justify-content-center align-items-center"
                     type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent"
@@ -27,22 +30,24 @@
                 <div class="navbar-toggler-element"></div>
                 <div class="navbar-toggler-element"></div>
             </button>
-
+            <!--Navigation -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav w-100 d-lg-flex justify-content-lg-end">
-                    <li class="nav-item d-flex justify-content-lg-end justify-content-center mt-5 mt-lg-0 mb-3 mb-lg-0">
-                        <a class="nav-link px-5 d-flex justify-content-lg-end justify-content-center pr-lg-3" href="#">About
+                <!--Navigation Links-->
+                <ul class="navbar-nav w-100 d-flex flex-column flex-lg-row justify-content-start justify-content-lg-end align-items-center ">
+                    <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#">About
                             Us</a>
                     </li>
-                    <li class="nav-item d-flex justify-content-center d-lg-block mb-3 mb-lg-0">
-                        <a class="nav-link px-5 d-flex justify-content-center align-items-center" href="#">Success
+                    <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#">Success
                             stories</a>
                     </li>
-                    <li class="nav-item" d-flex justify-content-center d-lg-block mb-3 mb-lg-0">
-                        <a class="nav-link px-5 d-flex justify-content-center align-items-center" href="#">Contact Us</a>
+                    <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#">Contact
+                            Us</a>
                     </li>
                     <li class="divider"></li>
-                    <li class="nav-item dropdown collapse d-lg-block d-flex flex-column justify-content-center align-items-center px-3">
+                    <li class="nav-item dropdown collapse d-flex d-lg-block flex-column justify-content-center align-items-center px-3 mr-0 mr-lg-4">
                         <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center pb-0 pb-lg-2"
                            href="#" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,20 +58,21 @@
                             </svg>
                             Eng
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right pt-0 mt-0" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item rounded h-100 pt-0 pt-lg-1" hreflang="ua" href="#">Ua</a>
+                        <div class="dropdown-menu dropdown-menu-right d-flex justify-content-center w-100"
+                             aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item rounded d-flex align-items-center justify-content-center py-3 py-lg-1"
+                               hreflang="ua" href="#">Ua</a>
                         </div>
                     </li>
-                    <li class="nav-item d-lg-block d-flex justify-content-center pt-4 pt-lg-0">
-                        <a class="nav-link nav-button d-flex justify-content-center align-items-center px-3" href="#">Start
-                            helping</a>
-                    </li>
                 </ul>
+                <!--Action button-->
+                <a class="nav-button d-flex justify-content-center align-items-center px-3 py-2" href="#">Start
+                    helping</a>
             </div>
         </div>
     </nav>
-</section>
-<header class="header">
+</header>
+<section class="welcome">
     <div class="overlay"></div>
     <div class="container d-flex flex-column align-items-start justify-content-center h-100">
         <h1 class="mb-4">Crowd funding</br>
@@ -83,7 +89,7 @@
         <a href="#" class="link">Learn more about project</a>
 
     </div>
-</header>
+</section>
 <section class="people">
     <div class="container-fluid container-sm">
         <div class="row">
@@ -157,7 +163,7 @@
 <section class="success-stories">
     <div class="container pt-5 pb-5">
         <div class="row">
-            <div class="col-1"></div>
+            <div class="col-1 d-none d-lg-block"></div>
             <div class="col">
                 <a href="#" class="stories-link mb-3 d-block w-50">Success Stories</a>
             </div>
@@ -172,17 +178,17 @@
                 </a>
             </div>
             <div class="col">
-                <div id="carouselExampleIndicators" class="carousel  slide carousel-fade" data-touch="true"
+                <div id="carouselExampleIndicators" class="carousel  slide carousel-fade d-flex justify-content-center" data-touch="true"
                      data-ride="carousel">
-                    <div class="carousel-inner ">
+                    <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="left col-12 col-lg mb-3 mb-lg-0"><a href="#"><img class="img-fluid"
                                                                                               src="assets/img/carousel-img.png"
                                                                                               alt="First slide"></a>
                                 </div>
-                                <div class="col-12 col-lg right d-flex flex-column justify-content-center">
-                                    <a href="#" class="stories-header mb-3">Recovered Elison </br>
+                                <div class="right col-12 col-lg d-flex flex-column justify-content-center">
+                                    <a href="#" class="stories-header mb-3">Recovered Elison
                                         and her happy family</a>
                                     <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
                                         Ipsum
@@ -198,8 +204,8 @@
                                                                                               src="assets/img/carousel-img.png"
                                                                                               alt="First slide"></a>
                                 </div>
-                                <div class="col-12 col-lg right d-flex flex-column justify-content-center">
-                                    <a href="#" class="stories-header mb-3">Recovered Elison </br>
+                                <div class="right col-12 col-lg d-flex flex-column justify-content-center">
+                                    <a href="#" class="stories-header mb-3">Recovered Elison
                                         and her happy family</a>
                                     <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
                                         Ipsum
@@ -217,7 +223,7 @@
                 </div>
             </div>
             <div class="col-1 d-none d-lg-flex justify-content-center align-items-center">
-                <a class="carousel-control-next position-absolute d-none d-lg-flex  justify-content-end"
+                <a class="carousel-control-next"
                    href="#carouselExampleIndicators" role="button"
                    data-slide="next">
                     <img class="" src="assets/img/control-next.svg" alt="">
@@ -349,7 +355,7 @@
         </div>
     </div>
 </footer>
-<div id="overlay"></div>
+
 <!--Bootstrap JS-->
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/popper.js/dist/popper.js"></script>
