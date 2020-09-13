@@ -2,6 +2,7 @@
 .navigation {
   position: relative;
   z-index: 1000;
+  transition: all 0.3s;
 
   .navbar {
     position: absolute;
@@ -229,8 +230,14 @@
       .nav-button {
         color: #0E6B3B;
         border-color: #0E6B3B;
+        transition: all 0.3s;
         @include media-breakpoint-down(md) {
           color: white;
+        }
+        &:hover {
+          color: white;
+          border-color: white;
+          transition: all 0.3s;
         }
       }
 

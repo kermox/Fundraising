@@ -1,0 +1,17 @@
+.success-stories-blog {
+
+  .img-keeper {
+    height: 300px;
+    width: 100%;
+    img {
+      object-fit: cover;
+    }
+    &-small {
+      height: 135px;
+    }
+  }
+
+  .right {
+
+  }
+}

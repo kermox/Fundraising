@@ -9896,6 +9896,7 @@ h3 {
 .navigation {
   position: relative;
   z-index: 1000;
+  transition: all 0.3s;
 }
 .navigation .navbar {
   position: absolute;
@@ -10091,11 +10092,17 @@ h3 {
 .navigation.navigation-white .navbar .nav-button {
   color: #0E6B3B;
   border-color: #0E6B3B;
+  transition: all 0.3s;
 }
 @media (max-width: 991.98px) {
   .navigation.navigation-white .navbar .nav-button {
     color: white;
   }
+}
+.navigation.navigation-white .navbar .nav-button:hover {
+  color: white;
+  border-color: white;
+  transition: all 0.3s;
 }
 .navigation.navigation-white .navbar ul li.divider {
   background-color: rgba(28, 184, 103, 0.35);

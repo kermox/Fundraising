@@ -17,11 +17,17 @@ openNavigation.click(function () {
         $('#navbar').toggleClass("nav-bg-dark")
 })
 
-let darkNavigation = document.getElementById("whiteNavigation");
+let navLinks = $('.nav-link')
+navLinks.click(function () {
+    $('body').toggleClass("overflow-hidden")
+    $('#whiteNavigationNavbar').toggleClass("nav-bg-light")
+})
+
+let whiteNatigation = document.getElementById("whiteNavigation");
 window.addEventListener("scroll", function () {
     if (window.pageYOffset >= 300) {
-        darkNavigation.classList.add("active")
+        whiteNatigation.classList.add("active")
     } else if (window.pageYOffset < 250) {
-        darkNavigation.classList.remove("active")
+        whiteNatigation.classList.remove("active")
     }
 })
