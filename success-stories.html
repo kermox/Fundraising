@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Fundraising/Profile</title>
+    <title>Fundraising/Success-Stories</title>
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,700&display=swap"
+          rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <!--Css-->
@@ -24,9 +26,9 @@
                     type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="navbar-toggler-element"></div>
-                <div class="navbar-toggler-element"></div>
-                <div class="navbar-toggler-element"></div>
+                <span class="navbar-toggler-element"></span>
+                <span class="navbar-toggler-element"></span>
+                <span class="navbar-toggler-element"></span>
             </button>
             <!--Navigation -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -49,7 +51,7 @@
                     </li>
                     <li class="divider"></li>
                     <li class="nav-item dropdown collapse d-flex d-lg-block flex-column justify-content-center align-items-center px-3 mr-0 mr-lg-4">
-                        <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center pb-0 pb-lg-2"
+                        <a class="dropdown-toggle d-flex justify-content-center align-items-center text-decoration-none"
                            href="#" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <svg class="mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -76,38 +78,97 @@
 </header>
 <section class="success-stories-blog">
     <div class="container">
-        <h3>Success Stories</h3>
-        <div class="row">
-            <div class="col-12 col-lg-7 left">
-                <img src="assets/img/success-stories-blog-1.png" alt="family watching a tv"
-                     class="img-keeper">
-                    <h5>Recovered Elison and her happy family enjoying completely new life</h5>
-                    <p class="date">August 12</p>
+        <h3 class="success-stories-blog-header py-4">Success Stories</h3>
+        <div class="card-columns pb-3">
+            <a href="#">
+                <div class="card main">
+                    <img class="card-img" src="assets/img/success-stories-blog-1.png" alt="family watching a tv">
+                    <div class="card-body pl-0">
+                        <h5 class="card-title">Recovered Elison and her happy family enjoying completely new life</h5>
+                        <p class="date">August 12</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card h-25">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-5">
+                                <img class="card-img" src="assets/img/success-stories-blog-2.png"
+                                     alt="family watching a tv">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-center">
+                                <p class="date">August 12</p>
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-5">
+                                <img class="card-img" src="assets/img/success-stories-blog-3.png"
+                                     alt="family watching a tv">
+                            </div>
+                            <div class="col-7 d-flex flex-column justify-content-center">
+                                <p class="date">August 12</p>
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="more-stories">
+    <div class="container">
+        <h5 class="more-stories-header py-4">More stories</h5>
+        <div class="row d-flex justify-content-center">
+            <div class="col-9 col-lg py-3 py-lg-0">
+                <a href="#" class="text-decoration-none">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/more-stories-1.png" alt="">
+                        <div class="card-body pl-0">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="col-12 col-lg-5 ">
-                <div class="row">
-                    <div class="col-4 col-lg">
-                        <img src="assets/img/success-stories-blog-2.png"
-                             alt="family playing a console"
-                             class="img-keeper img-keeper-small">
+            <div class="col-9 col-lg py-3 py-lg-0">
+                <a href="#" class="text-decoration-none">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/more-stories-2.png" alt="">
+                        <div class="card-body pl-0">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore</p>
+                        </div>
                     </div>
-                    <div class="col d-flex align-items-center h-100">
-                        <div><p class="date">August 12</p>
-                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6></div>
+                </a>
+            </div>
+            <div class="col-9 col-lg py-3 py-lg-0">
+                <a href="#" class="text-decoration-none">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/more-stories-3.png" alt="">
+                        <div class="card-body pl-0">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-4 col-lg">
-                        <img src="assets/img/success-stories-blog-3.png"
-                             alt="family playing a console"
-                             class="img-keeper img-keeper-small"></div>
-                    <div class="col d-flex align-items-center h-100">
-                        <div><p class="date">August 12</p>
-                            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6></div>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
+        <div class="pb-3 pt-5 w-100 d-flex justify-content-center"><a href="#" class="see-all w-50">Load more
+            <svg class="ml-3" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="svg-path"
+                      d="M8.00001 6.50002L1.49999 3.05176e-05L7.62939e-06 3.05176e-05L8.00001 8.00003L16 3.05176e-05L14.5 3.05176e-05L8.00001 6.50002Z"
+                      fill="#0E6B3B"/>
+            </svg>
+        </a></div>
     </div>
 </section>
 <section class="contact contact-profile mt-5">
@@ -188,9 +249,8 @@
             </a>
             <a href="#">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     x="0px" y="0px"
                      width="32px" height="32px" fill="white" viewBox="0 0 60.734 60.733"
-                     style="enable-background:new 0 0 60.734 60.733;"
                      xml:space="preserve">
 <g>
 	<path d="M57.378,0.001H3.352C1.502,0.001,0,1.5,0,3.353v54.026c0,1.853,1.502,3.354,3.352,3.354h29.086V37.214h-7.914v-9.167h7.914

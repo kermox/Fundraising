@@ -95,6 +95,9 @@
 
       .dollars-wrapper {
         width: 45%;
+        @include media-breakpoint-down(md){
+          width: 80%;
+        }
       }
 
       .dollars {

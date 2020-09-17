@@ -1,13 +1,13 @@
 .profile-nav {
   border: 1px solid #E0E0E0;
 
-  .nav-item{
-    @include media-breakpoint-down(sm){
-      width: 100%;
-    }
+  li{
+    //@include media-breakpoint-down(sm){
+    //  width: 100%;
+    //}
   }
 
-  .nav-link {
+  a{
     color: #7E7E7E;
     font-size: 16px;
     line-height: 19px;
@@ -22,6 +22,6 @@
     color: #0E6B3B;
   }
   .active{
-    color: #0E6B3B;
+    color: black;
   }
 }

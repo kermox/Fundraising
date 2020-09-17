@@ -10122,7 +10122,7 @@ h3 {
 .navigation.active .navbar {
   position: fixed;
   transition: all 0.3s ease;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .nav-bg-dark {
@@ -10327,15 +10327,111 @@ h3 {
   transition: opacity 0.3s;
 }
 
-.success-stories-blog .img-keeper {
-  height: 300px;
-  width: 100%;
+.success-stories-blog {
+  background: #FBF8F6;
 }
-.success-stories-blog .img-keeper img {
-  object-fit: cover;
+.success-stories-blog-header {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  /* or 117% */
+  color: #0E6B3B;
 }
-.success-stories-blog .img-keeper-small {
-  height: 135px;
+.success-stories-blog .card-columns {
+  column-count: 2;
+}
+@media (max-width: 991.98px) {
+  .success-stories-blog .card-columns {
+    column-count: 1;
+  }
+}
+.success-stories-blog .card {
+  border: none;
+  background: #FBF8F6;
+  transition: opacity 0.3s;
+}
+.success-stories-blog .card img {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+.success-stories-blog .card .date {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #0E6B3B;
+}
+.success-stories-blog .card .card-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+.success-stories-blog .card.main .date {
+  font-size: 18px;
+  line-height: 21px;
+}
+.success-stories-blog .card.main .card-title {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: bold;
+}
+.success-stories-blog .card:hover .date {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.success-stories-blog .card:hover .card-title {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.more-stories .more-stories-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+}
+.more-stories .card {
+  border: none;
+  transition: opacity 0.3s;
+}
+.more-stories .card .card-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+  color: #000000;
+}
+.more-stories .card:hover .card-text {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.more-stories .see-all {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  color: #0D6135;
+  transition: color 0.3s;
+}
+.more-stories .see-all .svg-path {
+  transition: fill 0.3s;
+}
+.more-stories .see-all:hover {
+  color: #1CB867;
+  transition: color 0.3s;
+}
+.more-stories .see-all:hover .svg-path {
+  fill: #1CB867;
+  transition: fill 0.3s;
 }
 
 /*# sourceMappingURL=main.css.map */

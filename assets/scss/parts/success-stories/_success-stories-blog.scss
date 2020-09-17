@@ -1,17 +1,78 @@
 .success-stories-blog {
+  &-header {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    /* or 117% */
 
-  .img-keeper {
-    height: 300px;
-    width: 100%;
-    img {
-      object-fit: cover;
-    }
-    &-small {
-      height: 135px;
+
+    color: #0E6B3B;
+  }
+
+  background: #FBF8F6;
+
+  .card-columns {
+    column-count: 2;
+    @include media-breakpoint-down(md) {
+      column-count: 1;
     }
   }
 
-  .right {
+  .card {
+    border: none;
+    background: #FBF8F6;
+    transition: opacity 0.3s;
 
+    img {
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .date {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+
+      color: #0E6B3B;
+
+    }
+
+    .card-title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+
+      color: #000000;
+    }
+
+    &.main {
+      .date {
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+      .card-title {
+        font-size: 28px;
+        line-height: 33px;
+        font-weight: bold;
+      }
+    }
+
+    &:hover {
+      .date {
+        opacity: 0.7;
+        transition: opacity 0.3s;
+      }
+
+      .card-title {
+        opacity: 0.7;
+        transition: opacity 0.3s;
+      }
+    }
   }
 }

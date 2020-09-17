@@ -1,0 +1,60 @@
+.more-stories {
+  .more-stories-header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #000000;
+  }
+
+  .card {
+    border: none;
+    transition: opacity 0.3s;
+
+    .card-text {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      /* or 144% */
+
+
+      color: #000000;
+    }
+    &:hover {
+      .card-text {
+        opacity: 0.7;
+        transition: opacity 0.3s;
+      }
+    }
+
+  }
+
+  .see-all {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+    color: #0D6135;
+    transition: color 0.3s;
+
+    .svg-path {
+      transition: fill 0.3s;
+    }
+
+
+    &:hover {
+      color: #1CB867;
+      transition: color 0.3s;
+
+      .svg-path {
+        fill: #1CB867;
+        transition: fill 0.3s;
+      }
+    }
+
+  }
+}

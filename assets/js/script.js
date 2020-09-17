@@ -1,9 +1,18 @@
 let navigation = document.getElementById("navigation");
+let whiteNatigation = document.getElementById("whiteNavigation");
 window.addEventListener("scroll", function () {
     if (window.pageYOffset >= 300) {
-        navigation.classList.add("active", "navigation-white")
+        if (navigation) {
+            navigation.classList.add("active", "navigation-white")
+        } else {
+            whiteNatigation.classList.add("active")
+        }
     } else if (window.pageYOffset < 250) {
-        navigation.classList.remove("active", "navigation-white")
+        if (navigation) {
+            navigation.classList.remove("active", "navigation-white")
+        } else {
+            whiteNatigation.classList.remove("active")
+        }
     }
 })
 
@@ -20,14 +29,9 @@ openNavigation.click(function () {
 let navLinks = $('.nav-link')
 navLinks.click(function () {
     $('body').toggleClass("overflow-hidden")
-    $('#whiteNavigationNavbar').toggleClass("nav-bg-light")
-})
 
-let whiteNatigation = document.getElementById("whiteNavigation");
-window.addEventListener("scroll", function () {
-    if (window.pageYOffset >= 300) {
-        whiteNatigation.classList.add("active")
-    } else if (window.pageYOffset < 250) {
-        whiteNatigation.classList.remove("active")
-    }
+    if ($(navigation).hasClass("active")) {
+        $('#navbar').toggleClass("nav-bg-light")
+    } else
+        $('#navbar').toggleClass("nav-bg-dark")
 })
