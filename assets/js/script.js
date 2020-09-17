@@ -18,13 +18,12 @@ window.addEventListener("scroll", function () {
 
 let openNavigation = $('.navbar-toggler')
 openNavigation.click(function () {
-    $('body').toggleClass("overflow-hidden")
-    $('#whiteNavigationNavbar').toggleClass("nav-bg-light")
-    if ($(navigation).hasClass("active")) {
-        $('#navbar').toggleClass("nav-bg-light")
-    } else
-        $('#navbar').toggleClass("nav-bg-dark")
-})
+        $('body').toggleClass("overflow-hidden")
+        if (!$(navigation).hasClass("active")) {
+            $('#navbar').toggleClass("nav-bg-dark")
+        }
+    }
+)
 
 let navLinks = $('.nav-link')
 navLinks.click(function () {
