@@ -74,16 +74,15 @@
   .carousel-indicators {
     position: absolute;
     bottom: -40px;
+    @include media-breakpoint-up(md){
+      bottom: -50px;
+    }
 
     li {
       width: 10px;
       height: 10px;
       border-radius: 50%;
       background-color: #0E6B3B;
-    }
-
-    @include media-breakpoint-down(md) {
-      display: block;
     }
   }
 

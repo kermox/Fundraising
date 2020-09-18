@@ -2,14 +2,20 @@
 .navigation {
   position: relative;
   z-index: 1000;
-  transition: all 0.3s;
+  transition: all 0.5s;
 
   .navbar {
     position: absolute;
     left: 0;
     top: 0;
     background-color: transparent;
-    transition: all 0.3s;
+
+    //Background styling for collapse navigation in .show state.
+    &.nav-bg-dark {
+      background-color: rgba(0, 0, 0, 0.7) !important;
+      backdrop-filter: blur(4px) !important;
+      transition: all 0.3s;
+    }
 
     .navbar-brand {
       font-size: 28px;
@@ -78,22 +84,22 @@
     }
 
     .navbar-collapse {
+      @include media-breakpoint-down(md) {
+        height: 100vh;
+        opacity: 0;
+      }
+
+      &.collapsing {
+        transition: none;
+      }
 
       &.show {
         height: 100vh !important;
-
-        .nav-button {
-          opacity: 1;
-          transition: opacity 0.5s ease;
-          transition-delay: 0.1s;
-        }
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
       }
 
       ul {
-        @include media-breakpoint-down(md) {
-          height: 100vh;
-        }
-
         li {
           @include media-breakpoint-down(md) {
             width: 100%;
@@ -154,12 +160,13 @@
 
             @include media-breakpoint-down(md) {
               width: 100%;
-              padding-bottom: 10%;
-              padding-top: 10%;
+              padding-bottom: 5vh;
+              padding-top: 5vh;
               &.dropdown-toggle {
                 padding-bottom: 0;
-                .dropdown-item{
-                  font-size: 24px;
+
+                .dropdown-item {
+                  font-size: 20px;
                 }
               }
               font-size: 24px;
@@ -181,23 +188,19 @@
     }
 
     .nav-button {
-      width: 25%;
+      width: 118px;
       border: 1px solid white;
       border-radius: 10px;
       transition: all 0.3s ease;
       text-decoration: none;
       color: white;
       @include media-breakpoint-down(md) {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, -150%);
         width: 66%;
         background-color: #1CB867;
         font-size: 22px;
         height: 64px;
         border: none;
-        opacity: 0;
+        opacity: 1;
       }
 
       &:hover {
@@ -295,11 +298,6 @@
   }
 }
 
-// Background styling for collapse navigation in .show state.
-.nav-bg-dark {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-  backdrop-filter: blur(4px) !important;
-}
 
 // Background styling for collapse navigation in .show state.
 .nav-bg-light {

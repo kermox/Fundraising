@@ -26,11 +26,25 @@ openNavigation.click(function () {
 )
 
 let navLinks = $('.nav-link')
-navLinks.click(function () {
-    $('body').toggleClass("overflow-hidden")
+if ($(window).width() < 992) {
+    navLinks.click(function () {
+        $('body').toggleClass("overflow-hidden")
 
-    if ($(navigation).hasClass("active")) {
-        $('#navbar').toggleClass("nav-bg-light")
-    } else
-        $('#navbar').toggleClass("nav-bg-dark")
-})
+        if ($(navigation).hasClass("active")) {
+            $('#navbar').toggleClass("nav-bg-light")
+        } else
+            $('#navbar').toggleClass("nav-bg-dark")
+    })
+}
+$(window).resize(function () {
+    if ($(window).width() < 992) {
+        navLinks.click(function () {
+            $('body').toggleClass("overflow-hidden")
+
+            if ($(navigation).hasClass("active")) {
+                $('#navbar').toggleClass("nav-bg-light")
+            } else
+                $('#navbar').toggleClass("nav-bg-dark")
+        })
+    }
+});

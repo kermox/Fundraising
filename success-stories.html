@@ -50,7 +50,7 @@
                             Us</a>
                     </li>
                     <li class="divider"></li>
-                    <li class="nav-item dropdown collapse d-flex d-lg-block flex-column justify-content-center align-items-center px-3 mr-0 mr-lg-4">
+                    <li class="nav-item dropdown collapse d-flex d-lg-block flex-column justify-content-center align-items-center px-3">
                         <a class="dropdown-toggle d-flex justify-content-center align-items-center text-decoration-none"
                            href="#" id="navbarDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,63 +64,58 @@
                         <div class="dropdown-menu dropdown-menu-right d-flex justify-content-center w-100"
                              aria-labelledby="navbarDropdown">
                             <a class="nav-link dropdown-item rounded d-flex align-items-center justify-content-center py-3 py-lg-1"
-                               hreflang="ua" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Ua</a>
+                               hreflang="ua" data-toggle="collapse" data-target=".navbar-collapse.show">Ua</a>
                         </div>
                     </li>
                 </ul>
                 <!--Action button-->
-                <a class="nav-button d-flex justify-content-center align-items-center px-3 py-2" href="#"
-                   data-toggle="collapse" data-target=".navbar-collapse.show">Start
-                    helping</a>
+                <div class="h-100 d-flex justify-content-center"><a
+                        class="nav-link nav-button d-flex justify-content-center align-items-center px-1 py-2 mt-3 mt-lg-0"
+                        href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Start
+                    helping</a></div>
             </div>
         </div>
     </nav>
 </header>
 <section class="success-stories-blog">
     <div class="container">
-        <h3 class="success-stories-blog-header py-4">Success Stories</h3>
-        <div class="card-columns pb-3">
-            <a href="#">
-                <div class="card main">
-                    <img class="card-img" src="assets/img/success-stories-blog-1.png" alt="family watching a tv">
-                    <div class="card-body pl-0">
-                        <h5 class="card-title">Recovered Elison and her happy family enjoying completely new life</h5>
-                        <p class="date">August 12</p>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="card h-25">
-                    <div class="card-body p-0">
-                        <div class="row">
-                            <div class="col-5">
-                                <img class="card-img" src="assets/img/success-stories-blog-2.png"
-                                     alt="family watching a tv">
-                            </div>
-                            <div class="col-7 d-flex flex-column justify-content-center">
-                                <p class="date">August 12</p>
-                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-                            </div>
+        <h3 class="success-stories-blog-header py-5">Success Stories</h3>
+        <div class="success-stories-blog-content pb-5 d-flex">
+            <div class="left h-100 pb-3 pb-lg-0">
+                <a href="#" class="text-decoration-none">
+                    <div class="card card-main h-100">
+                        <div class="card-image"
+                             style="background-image: url('assets/img/success-stories-blog-1.png');"></div>
+                        <div class="card-body pl-0">
+                            <h5 class="card-title">Recovered Elison and her happy family enjoying completely new
+                                life</h5>
+                            <p class="date">August 12</p>
                         </div>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="card">
-                    <div class="card-body p-0">
-                        <div class="row">
-                            <div class="col-5">
-                                <img class="card-img" src="assets/img/success-stories-blog-3.png"
-                                     alt="family watching a tv">
-                            </div>
-                            <div class="col-7 d-flex flex-column justify-content-center">
-                                <p class="date">August 12</p>
-                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-                            </div>
+                </a>
+            </div>
+            <div class="right">
+                <a href="#" class="text-decoration-none">
+                    <div class="card d-flex flex-row pb-3 pl-0 pl-lg-5">
+                        <div class="card-image w-75"
+                             style="background-image: url('assets/img/success-stories-blog-2.png');"></div>
+                        <div class="card-body pr-0">
+                            <p class="date">August 12</p>
+                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+                 <a href="#" class="text-decoration-none">
+                    <div class="card d-flex flex-row pt-3 pl-0 pl-lg-5">
+                        <div class="card-image w-75"
+                             style="background-image: url('assets/img/success-stories-blog-3.png');"></div>
+                        <div class="card-body pr-0">
+                            <p class="date">August 12</p>
+                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </section>
