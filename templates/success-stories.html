@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Fundraising</title>
+    <title>Fundraising/Success-Stories</title>
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,700&display=swap"
           rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <!--Css-->
-    <link rel="stylesheet" href="assets/scss/main.css">
-    <link rel="stylesheet" href="assets/scss/_people.scss">
+    <link rel="stylesheet" href="../assets/scss/main.css">
 </head>
 <body>
 
-<header id="navigation" class="navigation">
-    <nav class="navbar navbar-expand-lg w-100" id="navbar">
+<header id="whiteNavigation" class="navigation navigation-white">
+    <div class="nav-place-keeper"></div>
+    <nav class="navbar navbar-expand-lg w-100" id="whiteNavigationNavbar">
         <div class="container">
             <!--Logo-->
             <a class="navbar-brand" href="#">Logo</a>
@@ -35,14 +35,17 @@
                 <!--Navigation Links-->
                 <ul class="navbar-nav w-100 d-flex flex-column flex-lg-row justify-content-start justify-content-lg-end align-items-center ">
                     <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
-                        <a class="nav-link d-flex justify-content-center align-items-center" href="profile.php" data-toggle="collapse" data-target=".navbar-collapse.show">Profile</a>
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#">Home</a>
                     </li>
                     <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
-                        <a class="nav-link d-flex justify-content-center align-items-center" href="success-stories.php" data-toggle="collapse" data-target=".navbar-collapse.show">Success
-                            stories</a>
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#">Profile</a>
+                    </li>
+                     <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="success-stories.html">Success Stories</a>
                     </li>
                     <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
-                        <a class="nav-link d-flex justify-content-center align-items-center" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Contact
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#"
+                           data-toggle="collapse" data-target=".navbar-collapse.show">Contact
                             Us</a>
                     </li>
                     <li class="divider"></li>
@@ -65,181 +68,110 @@
                     </li>
                 </ul>
                 <!--Action button-->
-                <div class="h-100 d-flex justify-content-center"><a class="nav-link nav-button d-flex justify-content-center align-items-center px-1 py-2 mt-3 mt-lg-0"
-                      href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Start
+                <div class="h-100 d-flex justify-content-center"><a
+                        class="nav-link nav-button d-flex justify-content-center align-items-center px-1 py-2 mt-3 mt-lg-0"
+                        href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Start
                     helping</a></div>
             </div>
         </div>
     </nav>
 </header>
-<section class="welcome">
-    <div class="overlay"></div>
-    <div class="container d-flex flex-column align-items-start justify-content-center h-100">
-        <h1 class="mb-4">Crowd funding <br>
-            for saving lives</h1>
-        <h3 class="mb-5">Start saving people today
-        </h3>
-        <a href="#" class="btn d-flex justify-content-center align-items-center mb-3">Start helping
-            <span class="pl-3"><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.8963 8.24978L10.1673 1.52071C9.44335 0.796789 8.26542 0.796789 7.54151 1.52071C6.81759 2.24462 6.81759 3.42255 7.54151 4.14647L10.124 6.729H1.77079C0.794738 6.729 0 7.52374 0 8.49983C0 9.47591 0.794738 10.2706 1.77079 10.2706H10.124L7.54151 12.8532C6.81759 13.5771 6.81759 14.755 7.54151 15.4789C7.90345 15.8409 8.37874 16.0222 8.85474 16.0222C9.33073 16.0222 9.80529 15.8416 10.168 15.4789L16.897 8.74984C17.0344 8.61172 17.0344 8.3879 16.8963 8.24978Z"
-                      fill="white"/>
-            </svg></span>
-        </a>
-        <a href="#" class="link">Learn more about project</a>
-
+<section class="success-stories-blog">
+    <div class="container">
+        <h3 class="success-stories-blog-header py-5">Success Stories</h3>
+        <div class="success-stories-blog-content pb-5 d-flex">
+            <div class="left h-100 pb-3 pb-lg-0">
+                <a href="#" class="text-decoration-none">
+                    <div class="card card-main h-100">
+                        <div class="card-image"
+                             style="background-image: url('../assets/img/success-stories-blog-1.png');"></div>
+                        <div class="card-body pl-0">
+                            <h5 class="card-title">Recovered Elison and her happy family enjoying completely new
+                                life</h5>
+                            <p class="date">August 12</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="right">
+                <a href="#" class="text-decoration-none">
+                    <div class="card d-flex flex-row pb-3 pl-0 pl-lg-5">
+                        <div class="card-image w-75"
+                             style="background-image: url('../assets/img/success-stories-blog-2.png');"></div>
+                        <div class="card-body pr-0">
+                            <p class="date">August 12</p>
+                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                        </div>
+                    </div>
+                </a>
+                 <a href="#" class="text-decoration-none">
+                    <div class="card d-flex flex-row pt-3 pl-0 pl-lg-5">
+                        <div class="card-image w-75"
+                             style="background-image: url('../assets/img/success-stories-blog-3.png');"></div>
+                        <div class="card-body pr-0">
+                            <p class="date">August 12</p>
+                            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </section>
-<section class="people">
-    <div class="container-fluid container-sm">
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col"><h5 class="mb-5 mt-5">People who need Your help the most</h5></div>
-            <div class="col-1"></div>
+<section class="more-stories">
+    <div class="container">
+        <h5 class="more-stories-header py-4">More stories</h5>
+        <div class="row d-flex justify-content-center">
+            <div class="col-9 col-lg py-3 py-lg-0">
+                <a href="#" class="text-decoration-none">
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/img/more-stories-1.png" alt="">
+                        <div class="card-body pl-0">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-9 col-lg py-3 py-lg-0">
+                <a href="#" class="text-decoration-none">
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/img/more-stories-2.png" alt="">
+                        <div class="card-body pl-0">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-9 col-lg py-3 py-lg-0">
+                <a href="#" class="text-decoration-none">
+                    <div class="card">
+                        <img class="card-img-top" src="../assets/img/more-stories-3.png" alt="">
+                        <div class="card-body pl-0">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-12 col-lg d-flex justify-content-center mb-4 mg-lg-0">
-                <a href="#" class="card-wrapper">
-                    <div class="card w-100">
-                        <img class="card-img-top" src="assets/img/image1.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-1">Chicago, IL</h6>
-                            <h5 class="card-title mb-3">Kate, 8 yrs</h5>
-                            <p class="card-text mb-4">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
-                                дизайні...</p>
-                            <div class="percentage-bar mb-4">
-                                <div class="percentage-amount"></div>
-                            </div>
-                            <p class="raised">Raised $10 200 <span>of $25 000 </span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-lg d-flex justify-content-center mb-4 mg-lg-0">
-                <a href="#" class="card-wrapper">
-                    <div class="card w-100">
-                        <img class="card-img-top" src="assets/img/image2.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-1">Los Angeles, CA</h6>
-                            <h5 class="card-title mb-3">DIlan, 10 yrs</h5>
-                            <p class="card-text mb-4">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
-                                дизайні...</p>
-                            <div class="percentage-bar mb-4">
-                                <div class="percentage-amount"></div>
-                            </div>
-                            <p class="raised">Raised $10 200 <span>of $25 000 </span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-lg d-flex justify-content-center mb-4 mg-lg-0">
-                <a href="#" class="card-wrapper">
-                    <div class="card w-100">
-                        <img class="card-img-top" src="assets/img/image2.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-1">New York</h6>
-                            <h5 class="card-title mb-3">CIndy, 8 yrs</h5>
-                            <p class="card-text mb-4">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
-                                дизайні...</p>
-                            <div class="percentage-bar mb-4 px-2">
-                                <div class="percentage-amount"></div>
-                            </div>
-                            <p class="raised">Raised $10 200 <span>of $25 000 </span></p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-1"></div>
-        </div>
-        <div class="d-flex justify-content-center align-items-center mt-5 mb-5">
-            <a href="#" class="see-all">See all <span class="pl-5"><svg width="10" height="20" viewBox="0 0 10 20"
-                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="pb-3 pt-5 w-100 d-flex justify-content-center"><a href="#" class="see-all w-50">Load more
+            <svg class="ml-3" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="svg-path"
-                      d="M8.12498 10L0 18.125V20L10 10L0 0V1.87498L8.12498 10Z" fill="#0E6B3B"/></svg></span></a>
-        </div>
+                      d="M8.00001 6.50002L1.49999 3.05176e-05L7.62939e-06 3.05176e-05L8.00001 8.00003L16 3.05176e-05L14.5 3.05176e-05L8.00001 6.50002Z"
+                      fill="#0E6B3B"/>
+            </svg>
+        </a></div>
     </div>
 </section>
-<section class="success-stories pb-3">
-    <div class="container pt-5 pb-5">
-        <div class="row">
-            <div class="col-1 d-none d-lg-block"></div>
-            <div class="col">
-                <a href="#" class="stories-link mb-3 d-block w-50">Success Stories</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1 d-none d-lg-flex justify-content-center align-items-center">
-                <a class="carousel-control-prev"
-                   href="#carouselExampleIndicators" role="button"
-                   data-slide="prev">
-                    <img class="" src="assets/img/control-prev.svg" alt="">
-                    <span class="sr-only">Previous</span>
-                </a>
-            </div>
-            <div class="col">
-                <div id="carouselExampleIndicators" class="carousel  slide carousel-fade d-flex justify-content-center" data-touch="true"
-                     data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="left col-12 col-lg mb-3 mb-lg-0"><a href="#"><img class="img-fluid"
-                                                                                              src="assets/img/carousel-img.png"
-                                                                                              alt="First slide"></a>
-                                </div>
-                                <div class="right col-12 col-lg d-flex flex-column justify-content-center">
-                                    <a href="#" class="stories-header mb-3">Recovered Elison
-                                        and her happy family</a>
-                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
-                                        Ipsum
-                                        є, фактично, стандартною "рибою" аж з XVI сторіччя...
-                                    </p>
-                                    <a href="#" class="stories-read">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="left col-12 col-lg mb-3 mb-lg-0"><a href="#"><img class="img-fluid"
-                                                                                              src="assets/img/carousel-img.png"
-                                                                                              alt="First slide"></a>
-                                </div>
-                                <div class="right col-12 col-lg d-flex flex-column justify-content-center">
-                                    <a href="#" class="stories-header mb-3">Recovered Elison
-                                        and her happy family</a>
-                                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
-                                        Ipsum
-                                        є, фактично, стандартною "рибою" аж з XVI сторіччя...
-                                    </p>
-                                    <a href="#" class="stories-read">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <ol class="carousel-indicators m-0 p-0 d-flex">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    </ol>
-                </div>
-            </div>
-            <div class="col-1 d-none d-lg-flex justify-content-center align-items-center">
-                <a class="carousel-control-next"
-                   href="#carouselExampleIndicators" role="button"
-                   data-slide="next">
-                    <img class="" src="assets/img/control-next.svg" alt="">
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="contact">
+<section class="contact contact-profile mt-5">
     <div class="container d-flex flex-column align-items-center justify-content-center h-100">
         <h3>Have a speciall offer or want to support us?</h3>
         <a href="#" class="btn d-flex align-items-center justify-content-center mt-4">Contact Us</a>
     </div>
 </section>
-<section class="blog">
+<section class="blog blog-profile my-5">
     <div class="container py-5">
         <div class="row">
             <div class="col-1"></div>
@@ -249,7 +181,7 @@
         </div>
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-12 col-lg-5 d-flex align-items-center pb-5">
-                <div class="left"><a href="#"><img class="img-fluid" src="assets/img/blog1.png" alt=""></a></div>
+                <div class="left"><a href="#"><img class="img-fluid" src="../assets/img/blog1.png" alt=""></a></div>
                 <div class="right d-flex flex-column justify-content-center pl-3 pr-5">
                     <p class="date">August, 12</p>
                     <a href="#" class="content">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
@@ -257,7 +189,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-5 d-flex align-items-center pb-5">
-                <div class="left"><a href="#"><img class="img-fluid" src="assets/img/blog2.png" alt=""></a></div>
+                <div class="left"><a href="#"><img class="img-fluid" src="../assets/img/blog2.png" alt=""></a></div>
                 <div class="right d-flex flex-column justify-content-center pl-3 pr-5">
                     <p class="date">August, 12</p>
                     <a href="#" class="content">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
@@ -265,7 +197,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-5 d-flex align-items-center pb-5">
-                <div class="left"><a href="#"><img class="img-fluid" src="assets/img/blog3.png" alt=""></a></div>
+                <div class="left"><a href="#"><img class="img-fluid" src="../assets/img/blog3.png" alt=""></a></div>
                 <div class="right d-flex flex-column justify-content-center pl-3 pr-5">
                     <p class="date">August, 12</p>
                     <a href="#" class="content">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
@@ -273,7 +205,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-5 d-flex align-items-center pb-5">
-                <div class="left"><a href="#"><img class="img-fluid" src="assets/img/blog4.png" alt=""></a></div>
+                <div class="left"><a href="#"><img class="img-fluid" src="../assets/img/blog4.png" alt=""></a></div>
                 <div class="right d-flex flex-column justify-content-center pl-3 pr-5">
                     <p class="date">August, 12</p>
                     <a href="#" class="content">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та
@@ -356,11 +288,10 @@
 </footer>
 
 <!--Bootstrap JS-->
-<script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/popper.js/dist/popper.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/popper.js/dist/popper.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <!--Custom script-->
-<script src="assets/js/script.js"></script>
-
+<script src="../assets/js/script.js"></script>
 </body>
 </html>
