@@ -35,10 +35,10 @@
                 <!--Navigation Links-->
                 <ul class="navbar-nav w-100 d-flex flex-column flex-lg-row justify-content-start justify-content-lg-end align-items-center ">
                     <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
-                        <a class="nav-link d-flex justify-content-center align-items-center" href="./profile.html" data-toggle="collapse" data-target=".navbar-collapse.show">Profile</a>
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="profile.php" data-toggle="collapse" data-target=".navbar-collapse.show">Profile</a>
                     </li>
                     <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
-                        <a class="nav-link d-flex justify-content-center align-items-center" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Success
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="success-stories.php" data-toggle="collapse" data-target=".navbar-collapse.show">Success
                             stories</a>
                     </li>
                     <li class="nav-item d-flex d-lg-block justify-content-center mr-0 mr-lg-4">
